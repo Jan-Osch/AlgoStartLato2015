@@ -23,7 +23,7 @@ struct Heap{
     }
     Node getMinElement(){
         Node value = array[0];
-        this.currentNumberOfItems--;
+        currentNumberOfItems--;
         array[0]=array[this.currentNumberOfItems];
         this.heapifyMin(0);
         return value;
