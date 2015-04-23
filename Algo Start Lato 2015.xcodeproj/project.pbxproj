@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		244E10091AD6C37300976354 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 244E10081AD6C37300976354 /* main.cpp */; };
+		24D938681AE9211000B12638 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24D938671AE9211000B12638 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +20,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		24D938631AE9211000B12638 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		244E10051AD6C37300976354 /* Algo Start Lato 2015 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Algo Start Lato 2015"; sourceTree = BUILT_PRODUCTS_DIR; };
-		244E10081AD6C37300976354 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		244E10051AD6C37300976354 /* Algo Start Lato 2015 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Algo Start Lato 2015"; path = "/Users/Janusz/Dysk Google/Algo Start/AlgoStartLato2015/build/Debug/Algo Start Lato 2015"; sourceTree = "<absolute>"; };
+		24D938651AE9211000B12638 /* ScalanieWieluList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScalanieWieluList; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D938671AE9211000B12638 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		244E10021AD6C37300976354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D938621AE9211000B12638 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,25 +58,17 @@
 		244E0FFC1AD6C37300976354 = {
 			isa = PBXGroup;
 			children = (
-				244E10071AD6C37300976354 /* Algo Start Lato 2015 */,
-				244E10061AD6C37300976354 /* Products */,
+				24D938651AE9211000B12638 /* ScalanieWieluList */,
+				24D938661AE9211000B12638 /* ScalanieWieluList */,
 			);
 			sourceTree = "<group>";
 		};
-		244E10061AD6C37300976354 /* Products */ = {
+		24D938661AE9211000B12638 /* ScalanieWieluList */ = {
 			isa = PBXGroup;
 			children = (
-				244E10051AD6C37300976354 /* Algo Start Lato 2015 */,
+				24D938671AE9211000B12638 /* main.cpp */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		244E10071AD6C37300976354 /* Algo Start Lato 2015 */ = {
-			isa = PBXGroup;
-			children = (
-				244E10081AD6C37300976354 /* main.cpp */,
-			);
-			path = "Algo Start Lato 2015";
+			path = ScalanieWieluList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +91,23 @@
 			productReference = 244E10051AD6C37300976354 /* Algo Start Lato 2015 */;
 			productType = "com.apple.product-type.tool";
 		};
+		24D938641AE9211000B12638 /* ScalanieWieluList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D938691AE9211000B12638 /* Build configuration list for PBXNativeTarget "ScalanieWieluList" */;
+			buildPhases = (
+				24D938611AE9211000B12638 /* Sources */,
+				24D938621AE9211000B12638 /* Frameworks */,
+				24D938631AE9211000B12638 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScalanieWieluList;
+			productName = ScalanieWieluList;
+			productReference = 24D938651AE9211000B12638 /* ScalanieWieluList */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +120,9 @@
 					244E10041AD6C37300976354 = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					24D938641AE9211000B12638 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 244E10001AD6C37300976354 /* Build configuration list for PBXProject "Algo Start Lato 2015" */;
@@ -104,11 +133,12 @@
 				en,
 			);
 			mainGroup = 244E0FFC1AD6C37300976354;
-			productRefGroup = 244E10061AD6C37300976354 /* Products */;
+			productRefGroup = 244E0FFC1AD6C37300976354;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				244E10041AD6C37300976354 /* Algo Start Lato 2015 */,
+				24D938641AE9211000B12638 /* ScalanieWieluList */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244E10091AD6C37300976354 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D938611AE9211000B12638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D938681AE9211000B12638 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +250,27 @@
 			};
 			name = Release;
 		};
+		24D9386A1AE9211000B12638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24D9386B1AE9211000B12638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -230,6 +288,15 @@
 			buildConfigurations = (
 				244E100D1AD6C37300976354 /* Debug */,
 				244E100E1AD6C37300976354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D938691AE9211000B12638 /* Build configuration list for PBXNativeTarget "ScalanieWieluList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D9386A1AE9211000B12638 /* Debug */,
+				24D9386B1AE9211000B12638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
