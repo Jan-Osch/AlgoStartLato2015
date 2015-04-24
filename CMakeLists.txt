@@ -9,4 +9,5 @@ set(SOURCE_TEST )
 add_executable(ALGO ${SOURCE_FILES} )
 add_subdirectory(ScalanieWieluList)
 add_subdirectory(ScalanieWieluListTest)
+add_subdirectory(ScalanieZbiorow)
 
