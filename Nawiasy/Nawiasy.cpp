@@ -5,60 +5,23 @@
 #include <algorithm>
 using namespace std;
 
-class Node{
-public:
-    int key;
-    Node * left;
-    Node* right;
-    Node(int k){
-        key=k;
-        left= nullptr;
-        right= nullptr;
-    }
-};
 
-Node*  insert(Node *n, Node *k){
-    if( n== nullptr){
-        return k;
-    }
-    if(k->key==1){
-        n->right=insert(n->right,k);
-        return n;
-    }
-    if(n->left!= nullptr){
-        n->right=insert(n->right,k);
-        return n;
-    }
-    n->left=insert(n->left, k);
-    return n;
-}
-
-bool isLeaf(Node *n){
-    return (n->right== nullptr && n->left== nullptr);
-}
-int sum(Node *n){
-    if(n== nullptr){
-        return 0;
-    }
-    if(isLeaf(n)){
-        return n->key;
-    }
-    return sum(n->left)+sum(n->right);
-}
-bool check(Node *n){
-
-}
-
-
-void change(char* c, int index){
+void change(char* c, int index, int & nplus, int & nminus){
     if(c[index-1]== ')'){
+        nminus--;
+        nplus++;
         c[index-1]='(';
         return;
     }
+    nplus--;
+    nminus++;
     c[index-1]=')';
 }
 
-bool check(char *c, int size){
+bool check(char *c, int size, int nplus, int nminus){
+    if (nplus!=nminus){
+        return false;
+    }
     int control = 0;
     for (int i=0; i<size; i++){
         if(c[i]==')'){
@@ -82,8 +45,17 @@ int main() {
     cin>>n;
     char * slowo;
     slowo = new char[n];
+    int nplus=0;
+    int nminus=0;
+    char c;
     for(int i=0; i<n; i++){
-        cin>>slowo[i];
+        cin>>c;
+        if(c==')'){
+            nminus++;
+        }else{
+            nplus++;
+        }
+        slowo[i]=c;
     }
     cin>>m;
     int tmp;
@@ -91,14 +63,14 @@ int main() {
         m--;
         cin>>tmp;
         if(tmp==0){
-            if(check(slowo, n)){
+            if(check(slowo, n, nplus,nminus)){
                 cout<<"TAK"<<endl;
             }else{
                 cout<<"NIE"<<endl;
             }
         }
         else{
-            change(slowo,tmp);
+            change(slowo,tmp, nplus, nminus);
         }
     }
     return 0;
